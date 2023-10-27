@@ -147,7 +147,7 @@ static class Utf8WriterExtensions
     writer.Reserve(64);
     if (!spanFormattable.TryFormat(buffer, out int cw, format, formatProvider))
       return false;
-    writer.WriteChars(buffer);
+    writer.WriteChars(buffer.Slice(0, cw));
     return true;
   }
 }

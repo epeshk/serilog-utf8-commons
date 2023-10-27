@@ -43,7 +43,7 @@ ref struct Utf8Writer
     Flush();
     CurrentCapacity = Math.Max(CurrentCapacity, (int)BitOperations.RoundUpToPowerOf2((uint)bytes));
     var span = BufferWriter.GetSpan(CurrentCapacity);
-    if (Span.Length < bytes)
+    if (span.Length < bytes)
       Throw();
     return span;
   }
