@@ -57,9 +57,9 @@ class TimestampFormatter : ITimestampFormatter
     "yyyy-MM-ddTHH:mm:ss.ffffffzzz",
     "yyyy-MM-ddTHH:mm:ss.fffffffzzz",
   };
-  
-  static readonly string FullRoundTripPattern = "yyyy-MM-ddTHH:mm:ss.fffffff+zzzz";
-  
+
+  // static readonly string FullRoundTripPattern = "yyyy-MM-ddTHH:mm:ss.fffffff+zzzz";
+
   public TimestampFormatter(string format)
   {
     if (string.IsNullOrWhiteSpace(format) || format == "yyyy-MM-ddTHH:mm:ss.fffffffzzz")

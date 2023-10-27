@@ -12,7 +12,7 @@ class ByRefEqComparer : IEqualityComparer<string>, IEqualityComparer
   public bool Equals(string? x, string? y) => ReferenceEquals(x, y);
 
   public int GetHashCode(string obj) => RuntimeHelpers.GetHashCode(obj);
-  public bool Equals(object? x, object? y) => ReferenceEquals(x, y);
+  bool IEqualityComparer.Equals(object? x, object? y) => ReferenceEquals(x, y);
 
   public int GetHashCode(object obj) => RuntimeHelpers.GetHashCode(obj);
 }

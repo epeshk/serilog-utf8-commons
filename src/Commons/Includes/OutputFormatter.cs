@@ -17,9 +17,6 @@ class OutputFormatter
     readonly TimestampFormatter timestampFormatter;
     readonly MessageTemplate parsedTemplate;
 
-    /// <summary>
-    /// Construct a <see cref="MessageTemplateUtf8TextFormatter"/>.
-    /// </summary>
     /// <param name="outputTemplate">A message template describing the
     /// output messages.</param>
     /// <param name="formatProvider">Supplies culture-specific formatting information, or null.</param>
